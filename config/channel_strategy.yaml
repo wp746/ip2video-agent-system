@@ -1,0 +1,47 @@
+default_channels: [video, wechat, poster]
+
+wechat:
+  directions:
+    fuzzy_need:
+      objective: 根据用户模糊需求生成公众号内容草案和配图提示词。
+      article_structure: [标题, 开头, 用户场景, 行业洞察, IP融入段, 行动建议, 结尾]
+      tone_rules:
+        - 像行业编辑写作，不像 AI 总结。
+        - 少用首先/其次/最后，少用宏大空话。
+        - 多写具体场景、具体动作、具体人。
+        - 品牌/IP 出现要服务内容，不要硬插。
+      image_plan: [首图, 正文配图1, 正文配图2, 结尾卡片]
+    festival_campaign:
+      objective: 围绕重要节日或节点策划公众号选题、正文和配图。
+      article_structure: [节日钩子, 情绪共鸣, 行业关系, IP故事化植入, 品牌祝福, 配图建议]
+      tone_rules:
+        - 节日不是借口，要和行业关怀有真实关系。
+        - 避免模板祝福和万能鸡汤。
+        - 节日符号必须准确，不能随意混用。
+
+poster:
+  default_count: 3
+  formats:
+    - name: social_square
+      ratio: "1:1"
+      usage: 朋友圈、公众号头图、小红书封面
+    - name: vertical_campaign
+      ratio: "3:4"
+      usage: 公众号封面、企业宣传海报
+    - name: mobile_story
+      ratio: "9:16"
+      usage: 视频号/朋友圈竖版海报
+  prompt_contract:
+    required_blocks:
+      - IP identity anchors
+      - industry context
+      - festival or event symbol
+      - visual hierarchy
+      - copy placement
+      - color and light
+      - negative constraints
+  design_rules:
+    - 海报必须同时体现 IP、行业特点、节点氛围。
+    - 不做通用节日模板换皮。
+    - 文字区域要预留，不让画面主体遮挡标题。
+    - 中文标题不直接让模型生成小字，优先留白或大字位说明。

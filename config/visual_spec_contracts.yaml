@@ -1,0 +1,63 @@
+asset_views:
+  character_asset_board:
+    required_panels:
+      - front_view
+      - side_view
+      - back_view
+      - expression_set
+      - scale_reference
+      - material_detail
+    hard_constraints:
+      - white_or_neutral_background_only
+      - no_scene_action
+      - no_identity_mutation
+  scene_9_grid:
+    required_panels:
+      - wide_location
+      - key_action_space
+      - emotional_close_space
+      - product_area
+      - transition_space
+      - final_frame_space
+      - lighting_reference
+      - material_reference
+      - negative_space_for_logo
+    hard_constraints:
+      - consistent_palette
+      - no_conflicting_time_of_day
+      - no_unmotivated_decoration
+  prop_board:
+    required_panels:
+      - product_hero
+      - product_in_hand
+      - safety_use_state
+      - magical_or_symbolic_helper_prop
+      - material_macro
+    hard_constraints:
+      - product_as_action_object
+      - no_floating_logo_only
+      - no_unsafe_use
+  storyboard_board:
+    required_panels:
+      - hook
+      - intervention
+      - process
+      - turn
+      - payoff
+    hard_constraints:
+      - frame_number_visible
+      - action_arrow_allowed
+      - no_dialogue_text_inside_image
+
+prompt_blocks:
+  required:
+    - subject
+    - fixed_identity_anchors
+    - environment
+    - action_state
+    - composition
+    - lighting
+    - material
+    - camera
+    - continuity_rule
+    - negative_constraints

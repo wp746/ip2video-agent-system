@@ -1,0 +1,50 @@
+default_template_id: MED-A
+default_duration: 30s
+max_retries: 3
+
+logging:
+  level: INFO
+
+paths:
+  output_dir: ./output
+  templates_dir: ./templates
+  universe_dir: ./universe
+
+exports:
+  bundle: true
+  files:
+    - final_prompt_pack.md
+    - production_manifest.json
+    - channel_plan.yaml
+    - campaign_calendar.yaml
+    - wechat_content.yaml
+    - wechat_content.md
+    - poster_prompts.yaml
+    - poster_prompts.md
+    - asset_ledger.yaml
+    - shot_contract.yaml
+    - shot_prompts.yaml
+    - shot_prompts.md
+    - negative_prompts.md
+    - qa_report.md
+    - seedance_2_0_15s.txt
+    - seedance_2_5_30s.txt
+
+llm:
+  provider: openai
+  model: gpt-4o
+  use_llm: false
+
+seedance:
+  enable_api: false
+  default_20_duration: 15s
+  default_25_duration: 30s
+
+scoring:
+  threshold: 95
+  dimensions:
+    structure: 20
+    ip_fit: 20
+    visual_consistency: 20
+    rhythm: 20
+    prompt_executability: 20

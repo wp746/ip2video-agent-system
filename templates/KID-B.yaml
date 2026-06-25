@@ -1,0 +1,21 @@
+template_id: KID-B
+name: 儿童故事与冒险成长
+description: For child-friendly adventures, mascot worlds, education, and growth stories.
+visual_specs:
+  palette: 明亮天空蓝、嫩叶绿、奶油白、玩具红点缀
+  lighting: 清晨阳光、柔和阴影、童话感边缘光
+  material: 软胶、棉布、木质玩具、糖果般半透明材质
+  style: playful 3D animation, storybook charm, safe and warm
+narrative_specs:
+  emotional_curve: 好奇 -> 小困难 -> 鼓起勇气 -> 获得奖励
+  theme_preference: 友谊、第一次尝试、探索世界
+  reversal: 小小角色用自己的方式解决大问题
+cinematography_specs:
+  lenses: 28mm playful wide, 40mm character action, 70mm gentle close-up
+  camera_moves: light dolly, low-angle child perspective, playful pan
+  logo_position: playful final prop or sky sign
+audio_specs:
+  bgm: light orchestral pop
+  bpm: 95-115
+  instruments: ukulele, pizzicato strings, glockenspiel, hand claps
+  sfx_intensity: medium

@@ -1,0 +1,21 @@
+template_id: MED-A
+name: 医疗科普与愈疗陪伴
+description: For health, care, emotional healing, medical education, and soft product education.
+visual_specs:
+  palette: 橙色陪伴光、蓝色专业光、绿色守护点缀、干净白色空间
+  lighting: 柔和主光、低对比、透明材质高光、轻微体积光
+  material: 半透明硅胶、磨砂塑料、柔软织物、洁净医疗级金属
+  style: cinematic 3D character, warm healthcare realism, gentle product demo
+narrative_specs:
+  emotional_curve: 紧张 -> 被理解 -> 被守护 -> 放松
+  theme_preference: 第一次勇气、被陪伴的治疗、专业但不冰冷
+  reversal: 把害怕的医疗动作转化为一次守护任务
+cinematography_specs:
+  lenses: 35mm establishing, 50mm emotional close-up, 85mm detail macro
+  camera_moves: slow push-in, gentle orbit, soft rack focus
+  logo_position: final clean frame, lower right or centered end card
+audio_specs:
+  bgm: warm minimal piano with soft pulse
+  bpm: 78-92
+  instruments: felt piano, soft marimba, warm pad, tiny bell
+  sfx_intensity: low

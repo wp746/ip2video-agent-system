@@ -1,0 +1,145 @@
+annual_nodes:
+  元旦:
+    date_rule: 每年 1 月 1 日
+    category: public_holiday
+    audience_emotion: 新开始、计划感、祝福
+    visual_symbols: [日历第一页, 晨光, 新年数字, 礼物, 干净空间]
+    content_angles: [新年计划, 陪伴开启, 企业年度关怀, 品牌新承诺]
+    poster_motifs: [新年数字与 IP 互动, 晨光中的 IP, 品牌祝福卡]
+    forbidden_tones: [空泛口号, 过度鸡血]
+  春节:
+    date_rule: 农历正月初一
+    category: lunar_festival
+    audience_emotion: 团圆、祝福、热闹、归家
+    visual_symbols: [灯笼, 春联, 红包, 团圆饭, 烟花, 窗花]
+    content_angles: [团圆守护, 新春祝福, 家庭关怀, 品牌年味]
+    poster_motifs: [IP 贴春联, IP 递红包, 团圆桌边的 IP]
+    forbidden_tones: [廉价红金堆砌, 迷信承诺]
+  元宵节:
+    date_rule: 农历正月十五
+    category: lunar_festival
+    audience_emotion: 团圆延续、灯火、甜蜜
+    visual_symbols: [花灯, 汤圆, 灯谜, 月亮]
+    content_angles: [把关怀包进汤圆, 灯火里的陪伴, 节后收心]
+    poster_motifs: [IP 提花灯, IP 和汤圆互动, 灯谜式标题]
+    forbidden_tones: [视觉过满, 民俗符号错用]
+  妇女节:
+    date_rule: 每年 3 月 8 日
+    category: social_node
+    audience_emotion: 尊重、看见、力量、柔软
+    visual_symbols: [花, 书, 光, 女性剪影, 职场空间]
+    content_angles: [看见她的日常, 给女性用户的关怀, 品牌尊重]
+    poster_motifs: [IP 送花但不讨好, IP 守护女性日常, 温柔光影海报]
+    forbidden_tones: [消费主义套路, 刻板女性形象]
+  清明节:
+    date_rule: 每年 4 月 4-6 日
+    category: solar_term_holiday
+    audience_emotion: 思念、清朗、慎终追远
+    visual_symbols: [柳枝, 细雨, 青团, 山水, 白花]
+    content_angles: [思念与守护, 清朗生活, 春日健康提醒]
+    poster_motifs: [IP 持柳枝, 细雨中的清朗画面, 青团与春日]
+    forbidden_tones: [嬉闹营销, 过度商业化]
+  劳动节:
+    date_rule: 每年 5 月 1 日
+    category: public_holiday
+    audience_emotion: 致敬、休整、踏实、专业
+    visual_symbols: [工具, 工作台, 勋章, 阳光, 城市]
+    content_angles: [致敬一线, 专业背后的努力, 假期关怀]
+    poster_motifs: [IP 递上勋章, 工作场景中的 IP, 休整提示卡]
+    forbidden_tones: [空喊致敬, 压榨式奋斗叙事]
+  母亲节:
+    date_rule: 每年 5 月第二个星期日
+    category: social_node
+    audience_emotion: 感恩、照顾、牵挂、温柔
+    visual_symbols: [康乃馨, 家庭相册, 围裙, 暖光, 手写卡]
+    content_angles: [把照顾还给妈妈, 看见她的辛苦, 家庭健康关怀]
+    poster_motifs: [IP 递康乃馨, IP 和妈妈的手, 家庭暖光角落]
+    forbidden_tones: [催泪过度, 道德绑架]
+  520:
+    date_rule: 每年 5 月 20 日
+    category: social_node
+    audience_emotion: 表达爱、轻甜、陪伴
+    visual_symbols: [心形, 便签, 礼物, 粉色光, 牵手]
+    content_angles: [把爱说清楚, 陪伴不只一句话, 品牌温柔告白]
+    poster_motifs: [IP 递爱心便签, 产品变成告白道具, 轻甜构图]
+    forbidden_tones: [土味情话, 过度粉色]
+  儿童节:
+    date_rule: 每年 6 月 1 日
+    category: social_node
+    audience_emotion: 童心、安全、成长、快乐
+    visual_symbols: [气球, 玩具, 贴纸, 彩旗, 画笔]
+    content_angles: [守护童心, 第一次勇气, 给孩子的安全感]
+    poster_motifs: [IP 和气球, IP 发贴纸, 儿童画风背景]
+    forbidden_tones: [低幼化冒犯, 危险模仿]
+  端午节:
+    date_rule: 农历五月初五
+    category: lunar_festival
+    audience_emotion: 安康、守护、传统、清香
+    visual_symbols: [粽子, 艾草, 龙舟, 五彩绳, 竹叶]
+    content_angles: [端午安康, 把守护包进粽叶, 传统里的健康提醒]
+    poster_motifs: [IP 抱粽子, IP 系五彩绳, 粽叶变成守护披风, 龙舟小场景]
+    forbidden_tones: [只说快乐不说安康, 民俗符号乱用]
+  父亲节:
+    date_rule: 每年 6 月第三个星期日
+    category: social_node
+    audience_emotion: 沉默的爱、支撑、可靠、陪伴
+    visual_symbols: [衬衫, 领带, 工具箱, 背影, 手表, 老照片]
+    content_angles: [看见父亲不说出口的关心, 把照顾还给爸爸, 家庭健康提醒]
+    poster_motifs: [IP 靠近父亲背影, IP 递上小小勋章, 手表与暖光, 家庭桌面]
+    forbidden_tones: [苦情过度, 父爱刻板化, 说教]
+  七夕:
+    date_rule: 农历七月初七
+    category: lunar_festival
+    audience_emotion: 浪漫、陪伴、承诺
+    visual_symbols: [鹊桥, 星河, 信笺, 红线, 花]
+    content_angles: [长期陪伴, 温柔承诺, 关系里的照顾]
+    poster_motifs: [IP 搭小鹊桥, 星河中的 IP, 红线与产品道具]
+    forbidden_tones: [土味浪漫, 过度商业催促]
+  教师节:
+    date_rule: 每年 9 月 10 日
+    category: social_node
+    audience_emotion: 感谢、启发、陪伴成长
+    visual_symbols: [粉笔, 黑板, 书本, 花束, 讲台]
+    content_angles: [谢谢引路人, 成长背后的陪伴, 专业知识被看见]
+    poster_motifs: [IP 递粉笔花束, 黑板上的祝福, 书本旁的 IP]
+    forbidden_tones: [空泛感谢, 教师工具人化]
+  中秋节:
+    date_rule: 农历八月十五
+    category: lunar_festival
+    audience_emotion: 团圆、牵挂、月光、分享
+    visual_symbols: [月亮, 月饼, 桂花, 玉兔, 家庭窗边]
+    content_angles: [月圆人安, 团圆里的守护, 远方的牵挂]
+    poster_motifs: [IP 托月饼, 月光窗边的 IP, 桂花和品牌祝福]
+    forbidden_tones: [廉价月亮背景, 过度煽情]
+  国庆节:
+    date_rule: 每年 10 月 1 日
+    category: public_holiday
+    audience_emotion: 自豪、出行、团聚、秩序
+    visual_symbols: [国旗红, 城市地标, 鲜花, 旅途, 晴空]
+    content_angles: [假期守护, 出行提醒, 企业祝福]
+    poster_motifs: [IP 在城市地标前, 出行守护卡, 花篮与晴空]
+    forbidden_tones: [不规范国旗使用, 过度娱乐化]
+  重阳节:
+    date_rule: 农历九月初九
+    category: lunar_festival
+    audience_emotion: 敬老、陪伴、健康、登高
+    visual_symbols: [菊花, 登高, 茱萸, 老照片, 暖茶]
+    content_angles: [陪长辈多一步, 老年健康关怀, 把惦记变成行动]
+    poster_motifs: [IP 给长辈递茶, 登高小场景, 菊花暖光]
+    forbidden_tones: [年龄焦虑, 保健品式夸大]
+  双十一:
+    date_rule: 每年 11 月 11 日
+    category: commerce_node
+    audience_emotion: 选择、优惠、理性、效率
+    visual_symbols: [购物车, 标签, 包裹, 倒计时, 清单]
+    content_angles: [理性选择, 不被促销淹没, 产品价值说明]
+    poster_motifs: [IP 整理购物清单, 产品价值标签, 倒计时但不焦虑]
+    forbidden_tones: [低价轰炸, 虚假紧迫感]
+  冬至:
+    date_rule: 每年 12 月 21-23 日
+    category: solar_term
+    audience_emotion: 温暖、团聚、入冬关怀
+    visual_symbols: [饺子, 汤圆, 暖灯, 围巾, 热气]
+    content_angles: [冬日关怀, 吃点热乎的, 季节健康提醒]
+    poster_motifs: [IP 捧热汤, 饺子和暖灯, 围巾里的 IP]
+    forbidden_tones: [过度养生焦虑]

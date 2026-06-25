@@ -1,0 +1,124 @@
+research_dimensions:
+  - audience_context
+  - category_context
+  - visual_language
+  - narrative_opportunity
+  - platform_fit
+  - compliance_and_risk
+  - reference_keywords
+
+domain_profiles:
+  health_children:
+    triggers: [儿童, 孩子, 医疗, 注射, 治疗, 药, 健康, 陪伴, 家长]
+    recommended_template_id: MED-A
+    audience_insights:
+      - 儿童需要低威胁、可理解、可被陪伴的视觉表达。
+      - 家长更关注安全、可信、专业边界和不夸大承诺。
+    category_context:
+      - 医疗陪伴类 IP 应强调解释、安抚、流程理解，不替代医生。
+      - 产品出现需要动作理由，避免硬广和疗效暗示。
+    visual_language:
+      - 柔和医疗级光线、干净空间、低对比、半透明守护道具。
+      - 角色轮廓要简单稳定，方便在小屏幕和短镜头里识别。
+    narrative_opportunity:
+      - 把害怕转成任务，把流程转成发光路径，把完成转成小奖励。
+    forbidden_tones:
+      - 恐怖医疗
+      - 疼痛刺激
+      - 神奇疗效
+      - 儿童自行操作医疗用品
+    reference_keywords:
+      - child-friendly healthcare animation
+      - gentle medical companion mascot
+      - soft 3D healthcare explainer
+      - warm pediatric clinic visual design
+
+  children_growth:
+    triggers: [儿童, 成长, 冒险, 学习, 伙伴, 童话, 教育]
+    recommended_template_id: KID-B
+    audience_insights:
+      - 儿童观众更容易被明确任务、可爱伙伴、奖励反馈吸引。
+      - 家长希望内容安全、积极、非沉迷、价值观清楚。
+    category_context:
+      - 成长型 IP 需要低门槛冲突和清晰正向反馈。
+      - 角色动作应示范方法，而不是只做情绪陪伴。
+    visual_language:
+      - 明亮色彩、低角度儿童视角、玩具材质、清晨阳光。
+      - 表情幅度可以更大，但轮廓和主色必须稳定。
+    narrative_opportunity:
+      - 把第一次尝试包装成小冒险，用微小胜利建立记忆点。
+    forbidden_tones:
+      - 惩罚式教育
+      - 强刺激惊吓
+      - 危险模仿动作
+    reference_keywords:
+      - playful 3D mascot adventure
+      - children's learning animation
+      - toy-like character design
+
+  brand_product:
+    triggers: [品牌, 产品, 广告, 质感, 卖点, 电商, 包装, LOGO]
+    recommended_template_id: BRD-A
+    audience_insights:
+      - 用户需要在极短时间内理解产品价值和使用场景。
+      - 品牌方需要清晰露出，但不能牺牲可信的真实动作。
+    category_context:
+      - 产品型短片要从痛点、机制、结果、品牌记忆建立闭环。
+      - IP 不能喧宾夺主，应服务产品价值展示。
+    visual_language:
+      - 克制构图、精准高光、微距细节、干净 packshot。
+      - 产品材质、比例、使用状态要稳定。
+    narrative_opportunity:
+      - 让产品通过真实动作进入画面，用机制展示建立信任。
+    forbidden_tones:
+      - 空泛高级感
+      - 漂浮 LOGO
+      - 无动作卖点
+      - 过度承诺
+    reference_keywords:
+      - premium product film
+      - macro product demo
+      - cinematic brand mascot
+
+  suspense_reveal:
+    triggers: [悬疑, 反转, 危机, 异常, 真相, 夜晚, 线索]
+    recommended_template_id: SUS-A
+    audience_insights:
+      - 短视频观众需要前三秒异常钩子和最后明确反转。
+      - 反转必须服务主题，不能只靠误导。
+    category_context:
+      - 悬疑 IP 应控制信息释放，保持可理解的线索链。
+      - 画面紧张可以强，但不能破坏品牌或角色定位。
+    visual_language:
+      - 局部光、深阴影、线索微距、快速推近和揭示镜头。
+      - 最终画面要从紧张转向清晰记忆点。
+    narrative_opportunity:
+      - 把观众误以为危险的事件反转成隐藏守护。
+    forbidden_tones:
+      - 无意义惊吓
+      - 血腥暴力
+      - 逻辑断裂
+    reference_keywords:
+      - suspense reveal short film
+      - cinematic clue macro
+      - hidden guardian twist
+
+  general_ip:
+    triggers: []
+    recommended_template_id: KID-B
+    audience_insights:
+      - 模糊 IP 需要先建立受众、情绪位置和第一条故事任务。
+    category_context:
+      - 先用角色身份、世界规则和一个清晰任务建立可生产方向。
+    visual_language:
+      - 清晰轮廓、稳定主色、可复用道具、简单世界规则。
+    narrative_opportunity:
+      - 用一个低成本、可执行、可复用的短片结构验证 IP。
+    forbidden_tones:
+      - 风格混杂
+      - 角色职责不明
+      - 只好看但没有动作
+    reference_keywords:
+      - original IP mascot design
+      - short-form character story
+      - cinematic 3D character board

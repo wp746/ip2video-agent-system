@@ -1,0 +1,21 @@
+template_id: SUS-A
+name: 悬疑反转与强节奏
+description: For suspense, high contrast hooks, reveals, and twist-driven shorts.
+visual_specs:
+  palette: 冷灰蓝、警示红、局部暖光、强明暗对比
+  lighting: motivated practical light, narrow beam, deep shadow
+  material: wet pavement, worn fabric, glass reflection, metal scratches
+  style: cinematic suspense, high rhythm, controlled reveal
+narrative_specs:
+  emotional_curve: 异常 -> 逼近 -> 误判 -> 反转
+  theme_preference: 真相、误会、守护、隐藏线索
+  reversal: 观众以为危险，其实是保护或救援
+cinematography_specs:
+  lenses: 24mm tension wide, 50mm pursuit, 100mm clue macro
+  camera_moves: handheld drift, fast push-in, whip-pan reveal
+  logo_position: reveal object or final stark end card
+audio_specs:
+  bgm: tense pulse with restrained percussion
+  bpm: 105-130
+  instruments: low strings, muted synth, ticking percussion
+  sfx_intensity: high

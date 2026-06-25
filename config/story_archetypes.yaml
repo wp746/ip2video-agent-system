@@ -1,0 +1,147 @@
+MED-A:
+  name: 医疗陪伴科普
+  logline_pattern_cn: "{name}陪伴目标用户把紧张的健康场景变成一次可理解、可完成、被陪伴的任务。"
+  logline_pattern_en: "{name} turns a tense healthcare moment into a clear, supported, and achievable mission."
+  beats_30s:
+    - id: B01
+      time: 0-4s
+      beat: 钩子
+      purpose: 建立害怕或不确定感
+      cn: "目标用户面对{product_or_object}产生迟疑，空间安静下来，情绪被看见。"
+      en: "The target user hesitates in front of {product_or_object}; the space becomes quiet and the emotion is clearly seen."
+    - id: B02
+      time: 4-10s
+      beat: 陪伴介入
+      purpose: IP 出现并降低恐惧
+      cn: "{name}从柔和光点中出现，用身份锚点建立安全感。"
+      en: "{name} appears from a soft glow and uses identity anchors to create a sense of safety."
+    - id: B03
+      time: 10-18s
+      beat: 规则可视化
+      purpose: 把复杂流程变简单
+      cn: "{name}把流程拆成发光步骤，让目标用户知道下一步是什么。"
+      en: "{name} breaks the process into glowing steps so the user understands what happens next."
+    - id: B04
+      time: 18-25s
+      beat: 情绪反转
+      purpose: 完成关键动作但不渲染危险细节
+      cn: "成年人或专业人员完成关键动作，镜头聚焦放松的手和稳定呼吸。"
+      en: "An adult or professional completes the key action while the camera focuses on a relaxing hand and steady breathing."
+    - id: B05
+      time: 25-30s
+      beat: 温柔收束
+      purpose: 情绪结果和产品关系同框
+      cn: "{name}把守护道具转化为小奖励，目标用户微笑，{product_or_object}以安全道具身份收尾。"
+      en: "{name} turns the guardian prop into a small reward; the user smiles and {product_or_object} ends as a safe supporting object."
+  beats_15s: [B01, B03, B05]
+
+KID-B:
+  name: 儿童冒险成长
+  logline_pattern_cn: "{name}带领目标用户在一个小小冒险里学会第一次尝试。"
+  logline_pattern_en: "{name} leads the target user through a tiny adventure about trying something for the first time."
+  beats_30s:
+    - id: B01
+      time: 0-4s
+      beat: 好奇开场
+      purpose: 用世界奇观吸引注意
+      cn: "一个日常物件突然变成冒险入口，目标用户被吸引靠近。"
+      en: "An everyday object becomes an adventure doorway, drawing the user closer."
+    - id: B02
+      time: 4-10s
+      beat: IP 召唤
+      purpose: 建立伙伴关系
+      cn: "{name}出现，邀请目标用户完成一个小任务。"
+      en: "{name} appears and invites the user to complete a small mission."
+    - id: B03
+      time: 10-18s
+      beat: 小困难
+      purpose: 给角色成长空间
+      cn: "任务中出现温和障碍，目标用户犹豫但没有被吓退。"
+      en: "A gentle obstacle appears; the user hesitates but does not retreat."
+    - id: B04
+      time: 18-25s
+      beat: 勇气动作
+      purpose: 完成主动选择
+      cn: "{name}示范方法，目标用户主动完成一步。"
+      en: "{name} shows the method and the user actively completes one step."
+    - id: B05
+      time: 25-30s
+      beat: 奖励收束
+      purpose: 给出情绪奖励
+      cn: "世界变亮，小奖励出现，目标用户获得下一次也敢尝试的信心。"
+      en: "The world brightens, a small reward appears, and the user gains confidence for next time."
+  beats_15s: [B01, B03, B05]
+
+BRD-A:
+  name: 品牌价值展示
+  logline_pattern_cn: "{name}把一个真实使用问题转化为清晰、可信、有质感的品牌解决方案。"
+  logline_pattern_en: "{name} turns a real use-case problem into a clear, trusted, and premium brand solution."
+  beats_30s:
+    - id: B01
+      time: 0-4s
+      beat: 问题显现
+      purpose: 建立用户痛点
+      cn: "目标用户在真实场景中遇到一个具体阻碍，画面保持克制。"
+      en: "The target user faces a concrete friction in a real context; the image stays restrained."
+    - id: B02
+      time: 4-9s
+      beat: 产品介入
+      purpose: 让产品自然进入动作
+      cn: "{product_or_object}通过动作而不是硬广露出进入画面。"
+      en: "{product_or_object} enters through action rather than a forced ad placement."
+    - id: B03
+      time: 9-17s
+      beat: 机制展示
+      purpose: 展示关键卖点
+      cn: "镜头用微距、结构光或 UI 化路径展示核心机制。"
+      en: "Macro, structural light, or UI-like paths reveal the core mechanism."
+    - id: B04
+      time: 17-25s
+      beat: 价值验证
+      purpose: 展示使用结果
+      cn: "用户状态变得更轻松，环境秩序被重新组织。"
+      en: "The user's state becomes easier, and the environment feels reorganized."
+    - id: B05
+      time: 25-30s
+      beat: 品牌记忆
+      purpose: 高质感收尾
+      cn: "产品与 IP 或场景同框，品牌信息以干净构图收束。"
+      en: "The product shares the final frame with the IP or scene; brand memory lands in a clean composition."
+  beats_15s: [B01, B03, B05]
+
+SUS-A:
+  name: 悬疑反转短片
+  logline_pattern_cn: "{name}把一个看似危险的异常瞬间反转成一次隐藏的守护。"
+  logline_pattern_en: "{name} turns a seemingly dangerous anomaly into a hidden act of protection."
+  beats_30s:
+    - id: B01
+      time: 0-3s
+      beat: 异常
+      purpose: 强钩子
+      cn: "环境中出现一个不该出现的细节，目标用户停住。"
+      en: "An impossible detail appears in the environment, freezing the user in place."
+    - id: B02
+      time: 3-8s
+      beat: 逼近
+      purpose: 增强紧张
+      cn: "镜头靠近细节，声音变窄，观众以为危险正在靠近。"
+      en: "The camera moves closer, the sound narrows, and the viewer assumes danger is approaching."
+    - id: B03
+      time: 8-16s
+      beat: 误判
+      purpose: 引导错误理解
+      cn: "目标用户做出误判，{name}只露出一个身份锚点。"
+      en: "The user misreads the moment; only one identity anchor of {name} is visible."
+    - id: B04
+      time: 16-24s
+      beat: 反转
+      purpose: 揭示真实意图
+      cn: "{name}完整出现，证明异常其实是在阻止更大的问题。"
+      en: "{name} fully appears, revealing that the anomaly prevented a bigger problem."
+    - id: B05
+      time: 24-30s
+      beat: 余韵
+      purpose: 留下记忆点
+      cn: "危险感解除，一个小线索留在画面中成为品牌或主题记忆。"
+      en: "The danger dissolves, and a small clue remains as the brand or theme memory."
+  beats_15s: [B01, B03, B04]

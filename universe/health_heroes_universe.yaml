@@ -1,0 +1,25 @@
+universe_id: health_heroes
+name: 健康守护者宇宙
+world_layers:
+  real_world: 医院、家、学校、社区诊室、药房、夜间急诊通道
+  guardian_layer: 只有孩子或焦虑人群能感受到的微型守护者层
+rules:
+  - 守护者不能替代医生，只能陪伴、解释、提醒和鼓励。
+  - 医疗动作必须安全、干净、尊重现实流程。
+  - 视觉不能制造恐惧或夸大疗效。
+  - 每个故事必须让用户知道下一步如何正确行动。
+ip_defaults:
+  theme: 第一次勇气
+  head_shapes:
+    - sprout
+    - star
+    - shield
+  cloak_colors:
+    orange: 陪伴
+    blue: 专业
+    green: 保护
+bound_products:
+  - injection pen
+  - thermometer
+  - bandage
+  - medication reminder

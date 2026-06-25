@@ -1,0 +1,13 @@
+max_main_ips: 2
+roles:
+  protagonist: one required
+  helper: optional
+  brand_object: optional
+rules:
+  - Never let multiple IPs compete for the same emotional role.
+  - Assign one protagonist, one helper, and one concrete problem.
+  - Preserve each IP's fixed colors, silhouette, and personality.
+  - If a product appears, make it part of the action, not a floating logo.
+recommended_combinations:
+  - 小芽守护者 + 星星助手的夜间故事
+  - 盾牌护士 + 体温计精灵的家庭科普

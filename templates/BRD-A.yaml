@@ -1,0 +1,21 @@
+template_id: BRD-A
+name: 品牌广告与高质感展示
+description: For premium product, brand storytelling, and polished commercial spots.
+visual_specs:
+  palette: 品牌主色、深浅中性背景、精确高光、少量金属反射
+  lighting: commercial softbox, edge highlights, glossy product reflections
+  material: glass, brushed metal, premium polymer, clean packaging substrate
+  style: premium commercial film, controlled composition, product-first clarity
+narrative_specs:
+  emotional_curve: 问题显现 -> 产品介入 -> 价值被看见 -> 品牌记忆
+  theme_preference: 可靠、效率、质感、专业
+  reversal: 普通场景被产品能力重新组织
+cinematography_specs:
+  lenses: 50mm product hero, 85mm macro, 35mm lifestyle context
+  camera_moves: precise slider, macro reveal, controlled orbit
+  logo_position: final packshot or clean end card
+audio_specs:
+  bgm: premium minimal electronic pulse
+  bpm: 90-105
+  instruments: soft synth bass, light piano, subtle percussion
+  sfx_intensity: medium

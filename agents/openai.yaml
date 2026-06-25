@@ -1,0 +1,70 @@
+agent:
+  name: ip2video-director-agent
+  role: IP to AIGC short-film director
+  language: bilingual_cn_en
+  default_model: gpt-4o
+
+runtime:
+  local_first: true
+  use_llm_by_default: false
+  notes:
+    - The current Python runtime is deterministic and template-based.
+    - Future adapters can replace each pipeline with model-backed generation.
+
+pipelines:
+  - key: RESEARCH_PLANNER
+    file: src/pipelines/pipeline00_research_planner.py
+  - key: DESIGN_RESEARCH
+    file: src/pipelines/pipeline00b_design_research.py
+  - key: RESEARCH_SYNTHESIS
+    file: src/pipelines/pipeline00c_research_synthesis.py
+  - key: INPUT_COMPILER
+    file: src/pipelines/pipeline0_input_compiler.py
+  - key: IP_UNDERSTANDING
+    file: src/pipelines/pipeline1_ip_understanding.py
+  - key: IP_BIBLE_BUILDER
+    file: src/pipelines/pipeline1b_ip_bible_builder.py
+  - key: STORY_CREATION
+    file: src/pipelines/pipeline2_story_creation.py
+  - key: COMPLIANCE_REVIEW
+    file: src/pipelines/pipeline2b_compliance_review.py
+  - key: VISUAL_DESIGN
+    file: src/pipelines/pipeline3_visual_design.py
+  - key: ASSET_LEDGER
+    file: src/pipelines/pipeline3b_asset_ledger.py
+  - key: CINEMATOGRAPHY
+    file: src/pipelines/pipeline4_cinematography.py
+  - key: STORYBOARD_CONTRACT
+    file: src/pipelines/pipeline4b_storyboard_contract.py
+  - key: PROMPT_GENERATION
+    file: src/pipelines/pipeline5_prompt_generation.py
+  - key: PROMPT_VALIDATOR
+    file: src/pipelines/pipeline5b_prompt_validator.py
+  - key: QA_REPAIR_EXPORT
+    file: src/pipelines/pipeline6_qa_repair_export.py
+  - key: CHANNEL_PLANNER
+    file: src/pipelines/pipeline7_channel_planner.py
+  - key: CAMPAIGN_CALENDAR
+    file: src/pipelines/pipeline8_campaign_calendar.py
+  - key: WECHAT_CONTENT
+    file: src/pipelines/pipeline9_wechat_content.py
+  - key: POSTER_DESIGN
+    file: src/pipelines/pipeline10_poster_design.py
+
+output_contract:
+  format: markdown
+  include_design_research: true
+  include_channel_plan: true
+  include_wechat_content: true
+  include_poster_prompts: true
+  include_image_prompts: true
+  include_seedance_20_15s: true
+  include_seedance_25_30s: true
+  include_audio_prompt: true
+  include_usage_steps: true
+  include_production_manifest: true
+  include_asset_ledger: true
+  include_storyboard_contract: true
+  include_shot_prompts: true
+  include_negative_prompt: true
+  include_qa_report: true

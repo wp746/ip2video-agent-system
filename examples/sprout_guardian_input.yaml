@@ -1,0 +1,28 @@
+ip_input:
+  name: 小芽守护者
+  type: 虚拟人物
+  description: 一个头顶嫩芽、披着橙色小披风的微型健康守护者，陪伴孩子完成第一次注射笔治疗。
+  audience: 6-10 岁儿童与家长
+  visual_elements:
+    - 头顶嫩芽
+    - 橙色小披风
+    - 透明小盾牌
+    - 温柔发光的注射笔
+  product: 愈适达注射笔
+  platform: Seedance 2.5
+  duration: 30s
+  language: bilingual
+  constraints:
+    - 不夸大疗效
+    - 不展示针头刺入的恐怖特写
+    - 注射行为由成年人或医生完成
+    - 情绪基调要温柔、可靠、儿童友好
+request:
+  goal: 生成一个《第一次注射不害怕》的 AIGC 短片提示词包，并延展父亲节公众号与海报宣传物料。
+  style_template_id: MED-A
+  universe_id: health_heroes
+  channels:
+    - video
+    - wechat
+    - poster
+  occasion: 父亲节
