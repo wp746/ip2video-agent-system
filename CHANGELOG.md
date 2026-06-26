@@ -54,3 +54,7 @@
 - Added the `INF-A` 60-second eight-beat structure for engineering/maritime IP stories.
 - Added a leadership-facing annual China Communications Construction IP AIGC campaign plan under `deliverables/`.
 - Updated the China Communications Construction example to request 60-second IP story videos, WeChat special planning, and node poster campaigns.
+
+## 0.8.0
+
+- Added the first-batch `远航之前` production package with 60-second video script, WeChat special article, node poster prompts, submission copy, and source notes.

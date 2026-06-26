@@ -138,3 +138,9 @@ The leadership-facing annual campaign plan is available at:
 ```text
 deliverables/cccc_annual_ip_aigc_campaign_plan_2026.md
 ```
+
+The first-batch production package for the `远航之前` pilot is available at:
+
+```text
+deliverables/first_batch_yuanhangzhiqian/
+```
