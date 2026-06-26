@@ -15,7 +15,7 @@ ip_input:
     - 棕色工靴
   product: 中国交建工程与航运服务形象
   platform: Seedance 2.5
-  duration: 30s
+  duration: 60s
   language: bilingual
   constraints:
     - 不改变中国交建标识和蓝白品牌识别
@@ -32,7 +32,7 @@ ip_input:
     - /Users/wangpeng/Documents/Playground/IP2/建交物料/e92db498ly1ieho709p75j20yi1pc7wi.jpg
     - /Users/wangpeng/Documents/Playground/IP2/建交物料/e92db498ly1ieho70aehdj20yi1pc4qq.jpg
 request:
-  goal: 围绕世界海员日，为中国交建下属单位宣发考核创作一套可能被中国交建官方号采纳的短视频、公众号和海报宣传物料。
+  goal: 为中国交建下属单位宣发考核创作一套全年 IP 系列 AIGC 宣传方案，重点包括 1 分钟 AIGC IP 故事视频、公众号特别策划和重点节日/行业节点海报。
   universe_id: engineering_maritime
   channels:
     - video

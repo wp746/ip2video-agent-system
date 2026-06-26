@@ -28,6 +28,7 @@ REQUIRED_FILES = (
     "qa_report.md",
     "seedance_2_0_15s.txt",
     "seedance_2_5_30s.txt",
+    "seedance_2_5_60s.txt",
 )
 
 

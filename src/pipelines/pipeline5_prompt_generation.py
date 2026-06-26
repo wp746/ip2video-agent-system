@@ -17,17 +17,19 @@ def run(state: Dict[str, Any]) -> Dict[str, Any]:
 
     seedance_20_15s = _seedance_prompt(name, story, visual, cine, compliance, storyboard, ip_bible, "15-second", max_shots=3)
     seedance_25_30s = _seedance_prompt(name, story, visual, cine, compliance, storyboard, ip_bible, "30-second", max_shots=5)
+    seedance_25_60s = _seedance_prompt(name, story, visual, cine, compliance, storyboard, ip_bible, "1-minute", max_shots=8)
 
     return {
         "pipeline": "PROMPT_GENERATION",
         "seedance_20_15s": seedance_20_15s,
         "seedance_25_30s": seedance_25_30s,
+        "seedance_25_60s": seedance_25_60s,
         "usage_steps": [
             "Use the character asset board prompt in Image2 or another image generator to lock the IP identity.",
             "Generate the scene 9-grid and storyboard board, then select the clearest references.",
             "Confirm the asset ledger: identity reference and execution storyboard must not be mixed.",
             "Upload the chosen character, scene, prop, and storyboard references to Seedance.",
-            "Use the 15s prompt for Seedance 2.0 or the 30s prompt for Seedance 2.5.",
+            "Use the 15s prompt for Seedance 2.0, the 30s prompt for quick tests, or the 60s prompt for full IP story videos.",
             "Apply the negative prompt and compliance rules before generation.",
             "Review whether the character silhouette, product handling, and emotional payoff remain consistent.",
         ],
@@ -63,9 +65,9 @@ def _seedance_prompt(
         f"Fixed identity anchors that must remain visible: {anchors}. "
         f"Reference contract: identity references {reference_contract.get('identity_lock', [])}; execution references {reference_contract.get('execution_state', [])}. "
         f"Shot plan: {shot_text} "
-        "Keep the character identity stable across all shots. Keep the healthcare action gentle, safe, and non-frightening. "
-        f"Do not show scary needle penetration. Negative constraints: {negative_constraints}. "
-        "End with a calm emotional payoff and a clean product-aware final frame."
+        "Keep the character identity stable across all shots. Keep actions safe, readable, and aligned with the campaign context. "
+        f"Negative constraints: {negative_constraints}. "
+        "End with a clear emotional payoff and a clean official-account-ready final frame."
     )
 
 

@@ -15,7 +15,7 @@ Collect or infer:
 - IP description
 - Audience
 - Desired tone
-- Duration: `15s` or `30s`
+- Duration: `15s`, `30s`, or `60s`
 - Platform: Seedance 2.0, Seedance 2.5, Image2, or mixed workflow
 - Visual style template
 - Required product, logo, brand, or compliance constraints
@@ -28,7 +28,7 @@ Generate one bilingual Markdown document containing:
 2. Story concept, theme, hook, conflict, turn, and payoff.
 3. Image prompts for character boards, scene boards, storyboard boards, props, and style references.
 4. Seedance 2.0 15-second video prompt.
-5. Seedance 2.5 30-second video prompt.
+5. Seedance 2.5 30-second and 60-second video prompts.
 6. Audio, music, and sound-effect direction.
 7. Step-by-step operating instructions for image generation and video generation.
 8. Asset ledger, storyboard contract, negative prompt, QA report, and machine-readable manifest.
@@ -37,6 +37,7 @@ Generate one bilingual Markdown document containing:
 11. WeChat official-account article package with title options, draft body, festival plan, and IP-based image prompts.
 12. Poster prompt package for festivals, industry events, social campaign nodes, and Weibo captions.
 13. Client-facing full case plan with research tone summary, annual node strategy, channel architecture, and verification matrix.
+14. Leadership-facing annual campaign plan when the user asks for a full-year client proposal.
 
 ## Pipeline Contract
 
@@ -90,3 +91,5 @@ python -m src.main --input examples/sprout_guardian_input.yaml
 ```
 
 The local Python implementation is deterministic and template-based. It is meant to be the stable baseline before replacing individual pipeline files with model-backed agents.
+
+For China Communications Construction style engineering/maritime cases, use the `engineering_maritime` profile and the `INF-A` template. The system supports 1-minute IP story videos for official-account-friendly AIGC series campaigns.

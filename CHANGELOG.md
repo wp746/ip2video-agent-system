@@ -46,3 +46,11 @@
 - Upgraded campaign calendar adaptation so public festivals are translated into engineering/maritime communication angles when the profile requires it.
 - Upgraded poster packages to include Weibo caption suggestions alongside headline directions and image-generation prompts.
 - Added the China Communications Construction test input and engineering maritime universe config.
+
+## 0.7.0
+
+- Added 60-second IP story support for full AIGC video series campaigns.
+- Added `seedance_2_5_60s.txt` to exported production bundles and validator checks.
+- Added the `INF-A` 60-second eight-beat structure for engineering/maritime IP stories.
+- Added a leadership-facing annual China Communications Construction IP AIGC campaign plan under `deliverables/`.
+- Updated the China Communications Construction example to request 60-second IP story videos, WeChat special planning, and node poster campaigns.

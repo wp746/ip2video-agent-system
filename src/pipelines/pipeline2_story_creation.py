@@ -48,6 +48,8 @@ def _build_beats(name: str, product: str, duration: str, archetype: Dict[str, An
     if duration == "15s":
         selected_ids = set(archetype.get("beats_15s", []))
         beat_rows = [beat for beat in beat_rows if beat.get("id") in selected_ids]
+    elif duration in {"60s", "1min", "1m", "一分钟"}:
+        beat_rows = archetype.get("beats_60s", beat_rows)
     if not beat_rows:
         beat_rows = _fallback_beats()
 

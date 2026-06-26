@@ -38,6 +38,7 @@ class PackageWriter:
             "qa_report.md": self._qa_report(),
             "seedance_2_0_15s.txt": self.state["PROMPT_GENERATION"]["seedance_20_15s"] + "\n",
             "seedance_2_5_30s.txt": self.state["PROMPT_GENERATION"]["seedance_25_30s"] + "\n",
+            "seedance_2_5_60s.txt": self.state["PROMPT_GENERATION"]["seedance_25_60s"] + "\n",
         }
 
         written = {}

@@ -5,7 +5,7 @@ from __future__ import annotations
 from typing import Any, Dict, List
 
 
-REQUIRED_PROMPT_TERMS = ("character", "Story", "Visual style", "Shot plan", "Keep", "Do not")
+REQUIRED_PROMPT_TERMS = ("character", "Story", "Visual style", "Shot plan", "Keep", "Negative constraints")
 
 
 def run(state: Dict[str, Any]) -> Dict[str, Any]:
@@ -19,6 +19,7 @@ def run(state: Dict[str, Any]) -> Dict[str, Any]:
     validations = {
         "seedance_20_15s": _validate_prompt(prompts["seedance_20_15s"]),
         "seedance_25_30s": _validate_prompt(prompts["seedance_25_30s"]),
+        "seedance_25_60s": _validate_prompt(prompts["seedance_25_60s"]),
     }
     missing_rules = _missing_compliance_rules(prompts, compliance["hard_rules"])
     anchor_coverage = _anchor_coverage(ip_bible["visual_lock"]["must_keep"], prompts, visual)
@@ -60,7 +61,7 @@ def _validate_prompt(prompt: str) -> Dict[str, Any]:
 
 
 def _missing_compliance_rules(prompts: Dict[str, Any], hard_rules: List[str]) -> List[str]:
-    prompt_text = f"{prompts.get('seedance_20_15s', '')} {prompts.get('seedance_25_30s', '')}"
+    prompt_text = _video_prompt_text(prompts)
     missing = []
     for rule in hard_rules:
         key_terms = [part for part in rule.replace("，", " ").replace("。", " ").split() if len(part) >= 2]
@@ -71,7 +72,7 @@ def _missing_compliance_rules(prompts: Dict[str, Any], hard_rules: List[str]) ->
 
 def _anchor_coverage(anchors: List[str], prompts: Dict[str, Any], visual: Dict[str, Any]) -> Dict[str, Any]:
     image_text = str(visual.get("image_prompts", ""))
-    video_text = f"{prompts.get('seedance_20_15s', '')} {prompts.get('seedance_25_30s', '')}"
+    video_text = _video_prompt_text(prompts)
     return {
         "anchors": anchors,
         "missing_from_image_prompts": [anchor for anchor in anchors if anchor not in image_text],
@@ -119,3 +120,11 @@ def _repair_instructions(
 def _negative_prompt(compliance: Dict[str, Any]) -> str:
     rules = compliance.get("hard_rules", []) + compliance.get("blocked_claims", [])
     return "Negative prompt / 禁止项: " + "；".join(rules)
+
+
+def _video_prompt_text(prompts: Dict[str, Any]) -> str:
+    return " ".join(
+        str(value)
+        for key, value in prompts.items()
+        if key.startswith("seedance_") and isinstance(value, str)
+    )

@@ -201,18 +201,22 @@ class MarkdownGenerator:
                 "",
                 prompts["seedance_25_30s"],
                 "",
-                "## 9. 音乐 / 音效参考提示",
+                "## 9. Seedance 2.5 · 60 秒 IP 故事视频提示词",
+                "",
+                prompts["seedance_25_60s"],
+                "",
+                "## 10. 音乐 / 音效参考提示",
                 "",
                 prompts["audio_prompt"],
                 "",
-                "## 10. 负面提示与校验",
+                "## 11. 负面提示与校验",
                 "",
                 validator["negative_prompt"],
                 "",
                 f"- Prompt Validator: {validator['status']}",
                 f"- 修复建议: {validator['repair_instructions'] or '无'}",
                 "",
-                "## 11. 公众号内容包",
+                "## 12. 公众号内容包",
                 "",
                 "### 标题备选",
                 "",
@@ -240,7 +244,7 @@ class MarkdownGenerator:
             lines.extend([f"#### {slot}", "", prompt, ""])
         lines.extend(
             [
-                "## 12. 平面海报提示词",
+                "## 13. 平面海报提示词",
                 "",
             ]
         )
@@ -260,7 +264,7 @@ class MarkdownGenerator:
             )
         lines.extend(
             [
-                "## 13. 甲方全案方案与验证矩阵",
+                "## 14. 甲方全案方案与验证矩阵",
                 "",
                 "### 年度节点策略",
                 "",
@@ -282,7 +286,7 @@ class MarkdownGenerator:
             )
         lines.extend(
             [
-                "## 14. 评分记录",
+                "## 15. 评分记录",
                 "",
                 "| Pipeline | Score | Attempt | Missing |",
                 "| --- | ---: | ---: | --- |",

@@ -182,3 +182,52 @@ INF-A:
       cn: "品牌蓝白识别和行业场景同框，{name}站在工程现场前，留下稳健、温暖、可信的收束画面。"
       en: "The blue-white brand identity and industry scene share the final frame; {name} stands before the engineering site, leaving a steady, warm, credible ending."
   beats_15s: [B01, B03, B05]
+  beats_60s:
+    - id: B01
+      time: 0-5s
+      beat: 强钩子
+      purpose: 用反差或奇观建立转发欲
+      cn: "一个不寻常的工程/航运瞬间出现：海图上的蓝色航线突然亮起，{name}发现{product_or_object}背后藏着今天的任务。"
+      en: "An unusual infrastructure or maritime moment appears: a blue route on the sea chart lights up, and {name} discovers today's mission hidden behind {product_or_object}."
+    - id: B02
+      time: 5-12s
+      beat: IP 接任务
+      purpose: 建立 IP 系列主角感
+      cn: "{name}进入港口、船舶或项目现场，佩戴安全帽、确认对讲机和图纸，把任务从口号变成动作。"
+      en: "{name} enters a port, ship, or project site, checks the helmet, radio, and blueprint, turning the mission from a slogan into action."
+    - id: B03
+      time: 12-20s
+      beat: 一线风险
+      purpose: 给故事张力
+      cn: "风浪、设备预警或工期节点制造轻微紧张，{name}没有卖萌，而是按规范完成第一轮安全确认。"
+      en: "Waves, equipment alerts, or a schedule milestone create tension; {name} does not act cute, but completes the first safety check by procedure."
+    - id: B04
+      time: 20-30s
+      beat: 协作展开
+      purpose: 体现团队和行业属性
+      cn: "男孩 IP 和女孩 IP 分工协作：一个看图纸/航线，一个对讲/巡检，让观众看见工程背后的秩序。"
+      en: "The boy and girl IP characters collaborate: one reads the blueprint or route, the other uses the radio or inspects equipment, revealing the order behind engineering."
+    - id: B05
+      time: 30-40s
+      beat: 大工程展开
+      purpose: 从小动作推向宏大场景
+      cn: "镜头从 IP 手中的检查表推向港机、桥梁、船舶和海平线，说明每个细小确认都在托举更大的通达。"
+      en: "The camera moves from the checklist in the IP's hand to cranes, bridges, ships, and the horizon, showing how every small confirmation supports a larger connection."
+    - id: B06
+      time: 40-50s
+      beat: 节点情绪
+      purpose: 融入全年节点或特别策划主题
+      cn: "节点符号进入画面，但不抢戏：节日祝福、行业口号或项目节点被转化为一次挥手、一次守航、一次点亮。"
+      en: "The campaign symbol enters without overpowering the story: a festival blessing, industry slogan, or project milestone becomes a wave, a guarded route, or a light-up moment."
+    - id: B07
+      time: 50-56s
+      beat: 记忆反转
+      purpose: 形成想转发的情绪点
+      cn: "观众发现最开始亮起的蓝色航线，其实连接着远方归港、城市通达和一线人的平安，情绪完成反转。"
+      en: "The audience realizes the blue route from the opening connects a safe return, urban mobility, and frontline workers' safety, creating an emotional turn."
+    - id: B08
+      time: 56-60s
+      beat: 品牌收束
+      purpose: 官方号可采用的结尾
+      cn: "{name}站在中国交建蓝白识别和真实工程场景前，留下简短有力的主题字幕和品牌署名空间。"
+      en: "{name} stands before the blue-white China Communications Construction identity and a real engineering scene, leaving space for a short strong theme caption and brand signature."

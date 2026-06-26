@@ -43,7 +43,8 @@ output/<ip>_<duration>_prompt_pack/
 ├── negative_prompts.md
 ├── qa_report.md
 ├── seedance_2_0_15s.txt
-└── seedance_2_5_30s.txt
+├── seedance_2_5_30s.txt
+└── seedance_2_5_60s.txt
 ```
 
 ## Core Flow
@@ -131,3 +132,9 @@ python scripts/validate_production_package.py output/中国交建工程守护者
 ```
 
 This profile uses `engineering_maritime` research logic and the `INF-A` template. It is designed for SOE infrastructure, port, shipping, project-site, safety-production, and official-account campaign scenarios.
+
+The leadership-facing annual campaign plan is available at:
+
+```text
+deliverables/cccc_annual_ip_aigc_campaign_plan_2026.md
+```
