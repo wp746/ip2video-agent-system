@@ -35,7 +35,8 @@ Generate one bilingual Markdown document containing:
 9. Per-shot prompts for isolated Seedance or video-model testing.
 10. Design research summary, audience insights, reference keywords, forbidden tones, and production strategy.
 11. WeChat official-account article package with title options, draft body, festival plan, and IP-based image prompts.
-12. Poster prompt package for festivals, industry events, and social campaign nodes.
+12. Poster prompt package for festivals, industry events, social campaign nodes, and Weibo captions.
+13. Client-facing full case plan with research tone summary, annual node strategy, channel architecture, and verification matrix.
 
 ## Pipeline Contract
 
@@ -59,7 +60,8 @@ Always follow these production pipelines:
 16. `CHANNEL_PLANNER`: decide video, WeChat, and poster deliverables from user needs.
 17. `CAMPAIGN_CALENDAR`: match the requested occasion and build annual China festival/node planning.
 18. `WECHAT_CONTENT`: produce WeChat article drafts, festival campaign angles, and IP-based image prompts.
-19. `POSTER_DESIGN`: produce poster prompts by aspect ratio, use case, industry context, festival atmosphere, and IP identity.
+19. `POSTER_DESIGN`: produce poster prompts by aspect ratio, use case, industry context, festival atmosphere, IP identity, and Weibo caption.
+20. `CLIENT_CASE_PLAN`: produce the client-facing full case plan and validate channel outputs against research tone, platform use, and official-account adoption criteria.
 
 ## Quality Gates
 
@@ -77,6 +79,7 @@ Score each pipeline on:
 - Research-to-production strategy alignment
 - Channel fit for WeChat and poster outputs
 - Festival and industry-context integration
+- Client-plan consistency and verification readiness
 
 If score is below the configured threshold, revise before final output.
 

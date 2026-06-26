@@ -25,6 +25,7 @@ REQUIRED_KEYS = {
     "CAMPAIGN_CALENDAR": ["annual_calendar", "campaign_focus"],
     "WECHAT_CONTENT": ["wechat_package", "article_draft", "image_prompts"],
     "POSTER_DESIGN": ["poster_package", "poster_prompts"],
+    "CLIENT_CASE_PLAN": ["case_plan", "verification_matrix", "research_tone_summary"],
 }
 
 

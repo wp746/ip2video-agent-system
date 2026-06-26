@@ -22,6 +22,8 @@ class PackageWriter:
         files = {
             "final_prompt_pack.md": self.markdown_content,
             "production_manifest.json": self._manifest_json(),
+            "client_case_plan.yaml": self._yaml(self.state["CLIENT_CASE_PLAN"]),
+            "client_case_plan.md": self._client_case_plan_markdown(),
             "channel_plan.yaml": self._yaml(self.state["CHANNEL_PLANNER"]["channel_plan"]),
             "campaign_calendar.yaml": self._yaml(self.state["CAMPAIGN_CALENDAR"]["annual_calendar"]),
             "wechat_content.yaml": self._yaml(self.state["WECHAT_CONTENT"]),
@@ -86,8 +88,77 @@ class PackageWriter:
                 "poster_package": self.state["POSTER_DESIGN"]["poster_package"],
             },
             "qa_summary": self.state["QA_REPAIR_EXPORT"]["qa_summary"],
+            "client_case_plan": self.state["CLIENT_CASE_PLAN"]["case_plan"],
+            "verification_matrix": self.state["CLIENT_CASE_PLAN"]["verification_matrix"],
         }
         return json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
+
+    def _client_case_plan_markdown(self) -> str:
+        client = self.state["CLIENT_CASE_PLAN"]
+        tone = client["research_tone_summary"]
+        plan = client["case_plan"]
+        matrix = client["verification_matrix"]
+        lines = [
+            "# Client Full Case Plan",
+            "",
+            "## Research Tone Summary",
+            "",
+            f"- Core tone: {tone['core_tone']}",
+            "",
+            "### Adoptable Expression",
+            "",
+        ]
+        lines.extend(f"- {item}" for item in tone.get("adoptable_expression", []))
+        lines.extend(["", "### Local Reference Reading", ""])
+        lines.extend(f"- {item}" for item in tone.get("local_reference_reading", []))
+        lines.extend(["", "### Forbidden Tones", ""])
+        lines.extend(f"- {item}" for item in tone.get("forbidden_tones", []))
+        lines.extend(
+            [
+                "",
+                "## Case Plan",
+                "",
+                f"- Current test node: {plan['current_test_node']}",
+                f"- Communication proposition: {plan['communication_proposition']}",
+                "",
+                "### Strategic Axis",
+                "",
+            ]
+        )
+        lines.extend(f"- {item}" for item in plan.get("strategic_axis", []))
+        lines.extend(["", "### Channel Architecture", ""])
+        for channel, item in plan.get("channel_architecture", {}).items():
+            lines.extend(
+                [
+                    f"#### {channel}",
+                    "",
+                    f"- Role: {item['role']}",
+                    f"- First test: {item['first_test']}",
+                    f"- Must have: {'；'.join(item['must_have'])}",
+                    "",
+                ]
+            )
+        lines.extend(["## Annual Node Strategy", ""])
+        for item in plan.get("annual_node_strategy", []):
+            lines.append(f"- {item['node']} ({item['date_rule']}): {item['role']}；{item['angle']}")
+        lines.extend(["", "## First Round Delivery", ""])
+        lines.extend(f"- {item['item']}: {item['output']}" for item in plan.get("first_round_delivery", []))
+        lines.extend(["", "## Client Review Order", ""])
+        lines.extend(f"{index}. {item}" for index, item in enumerate(plan.get("client_review_order", []), start=1))
+        lines.extend(["", "## Verification Matrix", ""])
+        for item in matrix:
+            lines.extend(
+                [
+                    f"### {item['channel']}",
+                    "",
+                    f"- Artifact: {item['artifact']}",
+                    f"- Sample evidence: {item['sample_evidence']}",
+                    "- Checks:",
+                ]
+            )
+            lines.extend(f"  - {check}" for check in item.get("checks", []))
+            lines.append("")
+        return "\n".join(lines)
 
     def _wechat_markdown(self) -> str:
         wechat = self.state["WECHAT_CONTENT"]
@@ -148,6 +219,7 @@ class PackageWriter:
                     f"- Ratio: {item['ratio']}",
                     f"- Usage: {item['usage']}",
                     f"- Headline direction: {item['headline_direction']}",
+                    f"- Weibo caption: {item.get('weibo_caption', '')}",
                     "",
                     "### CN Prompt",
                     "",

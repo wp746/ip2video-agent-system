@@ -1,0 +1,21 @@
+template_id: INF-A
+name: 基建航运央企宣发
+description: For infrastructure, maritime, port, bridge, tunnel, engineering, safety, and state-owned enterprise communication.
+visual_specs:
+  palette: 中国交建蓝、工程白、安全帽白、海天蓝、港口暖金光、设备金属灰
+  lighting: 港口清晨侧光、驾驶舱自然光、夕阳返航暖光、工程现场高可信照明
+  material: 安全帽硬质塑料、蓝色工装布料、船舶钢板、甲板木纹、工程金属、图纸纸张
+  style: cinematic 3D mascot in realistic infrastructure and maritime environment, official corporate communication poster quality
+narrative_specs:
+  emotional_curve: 宏大场景 -> 具体岗位动作 -> 行业价值被看见 -> 节日/节点致敬 -> 品牌可信收束
+  theme_preference: 一线担当、安全规范、四海为家、向海图强、交通强国、工程温度
+  reversal: 把宏大口号落成一个小而真实的岗位动作
+cinematography_specs:
+  lenses: 24mm site establishing, 35mm action medium, 70mm mascot close-up, 100mm equipment macro
+  camera_moves: sunrise push-in, crane reveal, deck tracking, slow orbit around IP and equipment, final stable hero frame
+  logo_position: top-left official logo area or final clean brand end frame
+audio_specs:
+  bgm: warm corporate orchestral pulse with maritime ambience
+  bpm: 82-98
+  instruments: low strings, soft brass, piano, restrained percussion, ocean ambience
+  sfx_intensity: medium

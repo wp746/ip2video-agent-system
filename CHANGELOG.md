@@ -37,3 +37,12 @@
 - Added WeChat article package generation with title options, editorial body draft, festival planning, and IP-based illustration prompts.
 - Added poster prompt package generation for square, vertical, and mobile poster formats.
 - Export bundle now includes channel plan, campaign calendar, WeChat content files, and poster prompt files.
+
+## 0.6.0
+
+- Added the `engineering_maritime` research profile for SOE infrastructure, port, shipping, safety, and official-account campaign scenarios.
+- Added the `INF-A` template and infrastructure/maritime story archetype.
+- Added the `CLIENT_CASE_PLAN` pipeline for client-facing full case plans, annual node strategy, channel architecture, and verification matrix.
+- Upgraded campaign calendar adaptation so public festivals are translated into engineering/maritime communication angles when the profile requires it.
+- Upgraded poster packages to include Weibo caption suggestions alongside headline directions and image-generation prompts.
+- Added the China Communications Construction test input and engineering maritime universe config.

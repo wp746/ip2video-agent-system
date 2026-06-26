@@ -33,6 +33,9 @@ def run(state: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def _article_draft(brief: Dict[str, Any], research: Dict[str, Any], campaign: Dict[str, Any]) -> Dict[str, Any]:
+    if brief.get("research_profile_id") == "engineering_maritime":
+        return _engineering_article_draft(brief, research, campaign)
+
     ip_name = brief["ip_name"]
     product = brief.get("product") or "这件事"
     occasion = campaign.get("occasion") or "日常关怀"
@@ -63,6 +66,39 @@ def _article_draft(brief: Dict[str, Any], research: Dict[str, Any], campaign: Di
             },
         ],
         "closing": f"好的 IP 内容，不是把{ip_name}放在每一张图里刷存在感，而是让用户在需要被理解的时刻，真的记住它。",
+    }
+
+
+def _engineering_article_draft(brief: Dict[str, Any], research: Dict[str, Any], campaign: Dict[str, Any]) -> Dict[str, Any]:
+    ip_name = brief["ip_name"]
+    occasion = campaign.get("occasion") or "行业节点"
+    return {
+        "title_options": [
+            f"{occasion}，让{ip_name}把平安写进航程",
+            "从一张图纸到一段航程，看见一线岗位里的中国交建",
+            f"今天，把致敬交给一个具体动作",
+        ],
+        "subtitle": f"围绕{occasion}，面向中国交建官方号、视频号、抖音、微博和下属单位宣发考核场景的公众号内容草案。",
+        "opening": f"好的节点宣传，不是把祝福语放大，也不是让 IP 站在画面里摆拍。对于中国交建这样的工程与航运场景，真正能被记住的，是一个具体动作：一次巡检、一次对讲、一次看图纸、一次向远航挥手。",
+        "sections": [
+            {
+                "heading": "世界海员日，要先看见岗位，而不是先喊口号",
+                "body": "海员、港口、船舶、工程设备这些关键词，本身就带着距离感。内容要把距离拉近，不能只写宏大的词。让 IP 走进驾驶舱、甲板和港口现场，拿起对讲机、检查安全表、确认设备状态，行业精神才会落到画面里。",
+            },
+            {
+                "heading": f"{ip_name}的作用，是把宏大叙事变成可见动作",
+                "body": f"这个 IP 的可爱感可以降低传播门槛，但不能盖过专业感。它要做的不是卖萌，而是把中国交建蓝白工装、安全帽标识和一线岗位动作连起来，让观众一眼知道：这不是通用节日图，是属于中国交建工程现场的表达。",
+            },
+            {
+                "heading": "下属单位要被官方号采纳，内容必须稳、准、具体",
+                "body": "稳，是品牌识别不跑偏；准，是节点情绪和行业关系对得上；具体，是每一张图、每一个镜头都能说清楚人在做什么、设备在哪里、这份致敬为什么成立。",
+            },
+            {
+                "heading": "把“平安远航”落到一个画面",
+                "body": campaign.get("industry_integration", "让 IP 在港口晨光里完成一次安全确认，把节日祝福变成可被看见的工程动作。"),
+            },
+        ],
+        "closing": f"如果说海平线代表远方，那么一线岗位上的每一次确认，就是远方能被抵达的原因。{occasion}，让{ip_name}把这份祝福说得具体一点。",
     }
 
 

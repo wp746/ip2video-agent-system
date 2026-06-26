@@ -28,6 +28,8 @@ The command also writes a production bundle beside the Markdown file:
 output/<ip>_<duration>_prompt_pack/
 ├── final_prompt_pack.md
 ├── production_manifest.json
+├── client_case_plan.yaml
+├── client_case_plan.md
 ├── channel_plan.yaml
 ├── campaign_calendar.yaml
 ├── wechat_content.yaml
@@ -67,6 +69,7 @@ IP Input
   -> Pipeline 8: Campaign calendar
   -> Pipeline 9: WeChat official-account content
   -> Pipeline 10: Poster design prompts
+  -> Pipeline 11: Client full case plan and verification matrix
   -> Scoring Engine: structure, IP fit, visual consistency, rhythm, prompt executability
 ```
 
@@ -112,8 +115,19 @@ The next useful upgrades are:
 
 ## Configuration Libraries
 
-- `config/story_archetypes.yaml`: reusable story beat grammars for `MED-A`, `KID-B`, `BRD-A`, and `SUS-A`.
+- `config/story_archetypes.yaml`: reusable story beat grammars for `MED-A`, `KID-B`, `BRD-A`, `SUS-A`, and `INF-A`.
 - `config/visual_spec_contracts.yaml`: required panels and hard constraints for character boards, scene grids, prop boards, and storyboard boards.
 - `config/design_research_framework.yaml`: offline design-research profiles that map IP context to audience insights, visual language, narrative opportunities, forbidden tones, and recommended templates.
 - `config/campaign_calendar.yaml`: major China campaign nodes and festivals with content angles, symbols, poster motifs, and forbidden tones.
 - `config/channel_strategy.yaml`: channel rules for WeChat content and poster prompt production.
+
+## Engineering / Maritime Case
+
+Run the China Communications Construction test case:
+
+```bash
+python -m src.main --input examples/cccc_seafarer_campaign_input.yaml
+python scripts/validate_production_package.py output/中国交建工程守护者_30s_prompt_pack
+```
+
+This profile uses `engineering_maritime` research logic and the `INF-A` template. It is designed for SOE infrastructure, port, shipping, project-site, safety-production, and official-account campaign scenarios.

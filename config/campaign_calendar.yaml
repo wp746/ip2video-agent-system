@@ -1,4 +1,28 @@
 annual_nodes:
+  安全生产月:
+    date_rule: 每年 6 月
+    category: industry_node
+    audience_emotion: 安全、规范、责任、守护
+    visual_symbols: [安全帽, 检查表, 警示线, 对讲机, 设备巡检, 港口现场, 项目工地]
+    content_angles: [安全规范可视化, 一线巡检, 平安工程, 风险预防]
+    poster_motifs: [IP 持安全检查表巡检设备, IP 在港口警示线前对讲确认, IP 与一线人员完成安全交底]
+    forbidden_tones: [危险施工动作, 忽视防护装备, 把安全做成口号]
+  中国航海日:
+    date_rule: 每年 7 月 11 日
+    category: industry_node
+    audience_emotion: 向海图强、交通强国、航运发展、自豪
+    visual_symbols: [航线图, 港口, 船舶, 灯塔, 海平线, 桥梁, 中国交建蓝]
+    content_angles: [向海图强, 交通强国, 港航工程, 四海通达]
+    poster_motifs: [IP 展开航线图看向海平线, IP 与港口桥梁船舶同框, IP 在灯塔旁指向远航船舶]
+    forbidden_tones: [空泛宏大, 船舶港口关系画错, 过度娱乐化]
+  世界海员日:
+    date_rule: 每年 6 月 25 日
+    category: industry_node
+    audience_emotion: 致敬、平安、远航、坚守、四海为家
+    visual_symbols: [驾驶舱, 舵轮, 甲板, 海图, 对讲机, 救生圈, 港口, 远航船舶, 海平线]
+    content_angles: [致敬海员, 平安航程, 安全守护, 四海为家, 向海图强]
+    poster_motifs: [IP 掌舵驶向海平线, IP 持安全检查表, IP 对讲守航程, IP 挥手迎归港, IP 与船舶甲板同框]
+    forbidden_tones: [不规范海上作业, 过度卖萌, 忽视安全规范, 船舶设备画错重点]
   元旦:
     date_rule: 每年 1 月 1 日
     category: public_holiday

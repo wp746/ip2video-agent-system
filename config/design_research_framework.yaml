@@ -80,6 +80,36 @@ domain_profiles:
       - macro product demo
       - cinematic brand mascot
 
+  engineering_maritime:
+    triggers: [中国交建, 交建, 海员, 航运, 船舶, 港口, 码头, 桥梁, 隧道, 基建, 工程, 施工, 安全帽, 央企, 宣发考核, 官方号]
+    recommended_template_id: INF-A
+    audience_insights:
+      - 官方号宣发更看重行业精神、岗位真实感、安全规范和央企担当。
+      - 下属单位内容要能被上级官方号采纳，需要主题正、画面稳、表达具体，避免只做可爱 IP 摆拍。
+      - 面向视频号、抖音、微博和公众号时，前三秒要有明确场景钩子，结尾要落到岗位价值或节日致敬。
+    category_context:
+      - 基建航运类 IP 内容要把“人、工程、设备、项目场景”放在一起表达。
+      - 中国交建相关视觉要尊重品牌蓝白识别、安全帽、工装、海洋/港口/桥隧/工程设备等行业符号。
+      - 宣发内容应体现一线建设者、安全生产、四海为家、向海图强、交通强国等叙事方向。
+    visual_language:
+      - 港口晨光、船舶甲板、驾驶舱、吊机、桥梁、施工现场、蓝白工装、真实工程设备。
+      - IP 可以 Q 版，但动作必须职业化：查安全、看图纸、对讲、掌舵、巡检、递工具、挥手送航。
+      - 海报构图适合官方传播：品牌 logo 清晰、标题有力量、IP 不抢行业场景的主体价值。
+    narrative_opportunity:
+      - 用 IP 把宏大的工程叙事落到一个具体岗位动作：检查一处设备、递上一张图纸、守住一次航程、点亮一座港湾。
+    forbidden_tones:
+      - 低幼卖萌压过行业精神
+      - 不规范安全作业
+      - 品牌 logo 变形
+      - 只喊口号没有岗位动作
+      - 过度娱乐化央企形象
+    reference_keywords:
+      - CCCC maritime mascot poster
+      - Chinese infrastructure corporate communication
+      - seafarer day campaign poster
+      - port construction safety mascot
+      - engineering worker chibi 3D poster
+
   suspense_reveal:
     triggers: [悬疑, 反转, 危机, 异常, 真相, 夜晚, 线索]
     recommended_template_id: SUS-A

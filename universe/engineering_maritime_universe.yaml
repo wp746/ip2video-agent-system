@@ -1,0 +1,28 @@
+universe_id: engineering_maritime
+name: 工程航运宣发宇宙
+world_layers:
+  real_world: 港口、船舶甲板、驾驶舱、桥梁、隧道、施工现场、工程调度中心、项目一线
+  ip_layer: Q版工程建设 IP 作为安全、协作、致敬和科普的视觉引导者
+rules:
+  - IP 可以降低传播门槛，但不能覆盖真实工程场景和岗位动作。
+  - 每个画面必须保留安全规范意识，不能展示危险、错误或不合规操作。
+  - 中国交建蓝白品牌识别、安全帽、工装和标识必须稳定。
+  - 节日节点表达要和行业场景有真实关系，不能只做通用节日模板换皮。
+  - 官方号可采纳内容应主题正、表达稳、动作具体、画面有工程质感。
+ip_defaults:
+  theme: 一线担当
+  head_shapes:
+    - safety helmet
+  cloak_colors: {}
+  uniform_colors:
+    blue: 中国交建工装识别
+    white: 安全帽和工程可信感
+    sky_blue: 海天与交通基础设施语境
+bound_products:
+  - 工程项目
+  - 船舶航运
+  - 港口设备
+  - 安全检查表
+  - 图纸
+  - 对讲机
+  - 安全帽

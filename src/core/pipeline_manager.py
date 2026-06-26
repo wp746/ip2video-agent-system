@@ -26,6 +26,7 @@ PIPELINE_MODULES = {
     "CAMPAIGN_CALENDAR": "src.pipelines.pipeline8_campaign_calendar",
     "WECHAT_CONTENT": "src.pipelines.pipeline9_wechat_content",
     "POSTER_DESIGN": "src.pipelines.pipeline10_poster_design",
+    "CLIENT_CASE_PLAN": "src.pipelines.pipeline11_client_case_plan",
 }
 
 

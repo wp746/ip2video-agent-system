@@ -1,0 +1,41 @@
+ip_input:
+  name: 中国交建工程守护者
+  type: 央企工程建设 IP 双角色
+  description: 中国交建官方视觉体系下的一男一女 Q 版 3D 工程建设 IP，佩戴白色中国交建安全帽，身穿蓝色工装，用于中国交建及下属单位的航运、港口、桥梁、基建、安全生产和节日节点宣发。
+  audience: 中国交建官方号、视频号、抖音、微博、公众号受众，以及下属单位宣发考核场景中的企业员工、行业用户和公众受众
+  visual_elements:
+    - 白色安全帽
+    - 安全帽正面中国交建标识
+    - 安全帽两侧蓝色横线
+    - 中国交建蓝色工装
+    - 胸口中国交建标识
+    - Q版大眼工程 IP
+    - 男孩短发挥手形象
+    - 女孩双马尾形象
+    - 棕色工靴
+  product: 中国交建工程与航运服务形象
+  platform: Seedance 2.5
+  duration: 30s
+  language: bilingual
+  constraints:
+    - 不改变中国交建标识和蓝白品牌识别
+    - 不出现不规范安全作业
+    - 不把央企工程形象低幼化或娱乐化
+    - 必须突出岗位动作、工程场景和官方号可采纳的正向表达
+    - 海报要保留中文标题与品牌署名区域
+  reference_assets:
+    - /Users/wangpeng/Documents/Playground/IP2/建交物料/微信图片_20260625174154_109_7904.jpg
+    - /Users/wangpeng/Documents/Playground/IP2/建交物料/中国建交logo.png
+    - /Users/wangpeng/Documents/Playground/IP2/建交物料/e92db498ly1ieho6z1j25j20yi1pcx6p (1).jpg
+    - /Users/wangpeng/Documents/Playground/IP2/建交物料/e92db498ly1ieho6zcmpsj20yi1pc1ky.jpg
+    - /Users/wangpeng/Documents/Playground/IP2/建交物料/e92db498ly1ieho703jbuj20yi1pc7wi.jpg
+    - /Users/wangpeng/Documents/Playground/IP2/建交物料/e92db498ly1ieho709p75j20yi1pc7wi.jpg
+    - /Users/wangpeng/Documents/Playground/IP2/建交物料/e92db498ly1ieho70aehdj20yi1pc4qq.jpg
+request:
+  goal: 围绕世界海员日，为中国交建下属单位宣发考核创作一套可能被中国交建官方号采纳的短视频、公众号和海报宣传物料。
+  universe_id: engineering_maritime
+  channels:
+    - video
+    - wechat
+    - poster
+  occasion: 世界海员日

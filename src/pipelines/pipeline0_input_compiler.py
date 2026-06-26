@@ -37,6 +37,7 @@ def run(state: Dict[str, Any]) -> Dict[str, Any]:
         "universe_id": request_meta.get("universe_id", "health_heroes"),
         "visual_elements": list(ip_input.get("visual_elements", [])),
         "constraints": constraints,
+        "reference_assets": list(ip_input.get("reference_assets", [])),
         "design_strategy": design_strategy,
         "research_profile_id": state.get("RESEARCH_PLANNER", {}).get("research_plan", {}).get("domain_profile_id", "general_ip"),
         "reference_keywords": design_strategy.get("reference_keywords", []),

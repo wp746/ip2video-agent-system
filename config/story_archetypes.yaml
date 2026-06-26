@@ -145,3 +145,40 @@ SUS-A:
       cn: "危险感解除，一个小线索留在画面中成为品牌或主题记忆。"
       en: "The danger dissolves, and a small clue remains as the brand or theme memory."
   beats_15s: [B01, B03, B04]
+
+INF-A:
+  name: 基建航运央企宣发
+  logline_pattern_cn: "{name}把一个宏大的工程/航运主题落到一线岗位的具体行动里，让行业精神被看见。"
+  logline_pattern_en: "{name} turns a large infrastructure or maritime theme into a concrete frontline action so the industry spirit becomes visible."
+  beats_30s:
+    - id: B01
+      time: 0-4s
+      beat: 场景钩子
+      purpose: 快速建立港口/船舶/工程现场
+      cn: "清晨的港口或船舶现场启动，{name}出现在一线岗位旁，{product_or_object}成为今天的任务线索。"
+      en: "A morning port, ship, or construction site comes alive; {name} appears beside a frontline post, and {product_or_object} becomes today's mission clue."
+    - id: B02
+      time: 4-10s
+      beat: 岗位动作
+      purpose: 用具体动作替代空泛口号
+      cn: "{name}检查安全帽、图纸、设备或对讲机，把规范动作做得清楚可见。"
+      en: "{name} checks the helmet, blueprint, equipment, or radio, making the standard operation clearly visible."
+    - id: B03
+      time: 10-18s
+      beat: 行业价值
+      purpose: 把个体岗位连接到工程使命
+      cn: "镜头从 IP 的小动作推向船舶、港机、桥梁或海面，显示一线工作如何支撑大工程。"
+      en: "The camera moves from the IP's small action to ships, cranes, bridges, or the sea, showing how frontline work supports major engineering."
+    - id: B04
+      time: 18-25s
+      beat: 节点情绪
+      purpose: 融入节日/行业节点
+      cn: "节点祝福不只停在文字上，{name}把祝福变成一次巡检、一次挥手、一次安全确认。"
+      en: "The campaign blessing becomes more than text: {name} turns it into an inspection, a wave, or a safety confirmation."
+    - id: B05
+      time: 25-30s
+      beat: 品牌收束
+      purpose: 落到官方号可采纳的品牌表达
+      cn: "品牌蓝白识别和行业场景同框，{name}站在工程现场前，留下稳健、温暖、可信的收束画面。"
+      en: "The blue-white brand identity and industry scene share the final frame; {name} stands before the engineering site, leaving a steady, warm, credible ending."
+  beats_15s: [B01, B03, B05]

@@ -23,6 +23,8 @@ def run(state: Dict[str, Any]) -> Dict[str, Any]:
         risk_flags.append("child_audience")
     if brief.get("product"):
         risk_flags.append("product_claims")
+    if brief.get("research_profile_id") == "engineering_maritime":
+        risk_flags.append("engineering_safety")
 
     hard_rules = list(constraints)
     hard_rules.extend(_default_rules(risk_flags))
@@ -32,11 +34,7 @@ def run(state: Dict[str, Any]) -> Dict[str, Any]:
         "pipeline": "COMPLIANCE_REVIEW",
         "risk_flags": risk_flags,
         "hard_rules": _dedupe(hard_rules),
-        "blocked_claims": [
-            "不得承诺治疗效果、恢复速度或医学结果。",
-            "不得展示危险动作的教学化细节。",
-            "不得把产品塑造成替代医生诊疗的角色。",
-        ],
+        "blocked_claims": _blocked_claims(risk_flags),
         "required_disclaimers": [
             "医疗相关内容只用于情绪陪伴与科普表达，真实操作遵循医生或说明书指导。",
         ]
@@ -64,7 +62,29 @@ def _default_rules(risk_flags: List[str]) -> List[str]:
                 "动作必须安全，不能鼓励儿童自行操作医疗用品。",
             ]
         )
+    if "engineering_safety" in risk_flags:
+        rules.extend(
+            [
+                "工程、航运和安全动作必须符合规范，不能展示危险或错误操作。",
+                "中国交建标识、蓝白品牌识别和安全帽元素不得变形。",
+                "内容必须突出岗位动作、工程现场和官方传播气质，避免过度娱乐化。",
+            ]
+        )
     return rules
+
+
+def _blocked_claims(risk_flags: List[str]) -> List[str]:
+    if "engineering_safety" in risk_flags:
+        return [
+            "不得出现不规范海上作业、施工动作或错误设备操作。",
+            "不得把央企工程形象做成低幼娱乐化内容。",
+            "不得使用虚假项目成果、夸大工程能力或不准确品牌表述。",
+        ]
+    return [
+        "不得承诺治疗效果、恢复速度或医学结果。",
+        "不得展示危险动作的教学化细节。",
+        "不得把产品塑造成替代医生诊疗的角色。",
+    ]
 
 
 def _dedupe(items: List[str]) -> List[str]:

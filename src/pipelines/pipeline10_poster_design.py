@@ -51,7 +51,8 @@ def _poster_prompts(
         variants[f"poster_{index}_{fmt['name']}"] = {
             "ratio": fmt.get("ratio", ""),
             "usage": fmt.get("usage", ""),
-            "headline_direction": _headline_direction(occasion, brief["ip_name"], index),
+            "headline_direction": _headline_direction(occasion, brief, index),
+            "weibo_caption": _weibo_caption(occasion, brief, motif, index),
             "prompt_cn": (
                 f"平面宣传海报，比例 {fmt.get('ratio', '')}，主题：{occasion}。"
                 f"IP：{brief['ip_name']}，必须保留身份锚点：{anchors}。"
@@ -72,11 +73,36 @@ def _poster_prompts(
     return variants
 
 
-def _headline_direction(occasion: str, ip_name: str, index: int) -> str:
+def _headline_direction(occasion: str, brief: Dict[str, Any], index: int) -> str:
+    ip_name = brief["ip_name"]
+    if brief.get("research_profile_id") == "engineering_maritime":
+        options = [
+            f"{occasion}，把平安写进每一段航程",
+            "向海图强，一线守护看得见",
+            "以规范护航，用担当抵达远方",
+        ]
+        return options[(index - 1) % len(options)]
     options = [
         f"{occasion}，让{ip_name}把关心送到身边",
         f"把节日祝福，变成一个具体的守护动作",
         f"今天的祝福不只好看，也要真的有用",
+    ]
+    return options[(index - 1) % len(options)]
+
+
+def _weibo_caption(occasion: str, brief: Dict[str, Any], motif: str, index: int) -> str:
+    ip_name = brief["ip_name"]
+    if brief.get("research_profile_id") == "engineering_maritime":
+        options = [
+            f"{occasion}，把镜头交给一线。{ip_name}和每一次巡检、每一次对讲、每一次确认站在一起，让平安成为远航的底气。",
+            f"从港口到海平线，从图纸到航程，{ip_name}用一个具体动作致敬坚守岗位的人。向海图强，平安抵达。",
+            f"{motif}。今天不只说祝福，也看见祝福背后的规范、担当和守护。{occasion}，致敬每一段被认真守护的航程。",
+        ]
+        return options[(index - 1) % len(options)]
+    options = [
+        f"{occasion}，让{ip_name}把祝福落到一个具体动作里。",
+        f"今天不只说祝福，也把关心变成看得见的陪伴。",
+        f"{motif}，让节点内容更像真实场景，而不是模板换皮。",
     ]
     return options[(index - 1) % len(options)]
 

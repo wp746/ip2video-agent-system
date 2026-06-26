@@ -55,6 +55,8 @@ def _emotional_positioning(research: Dict[str, Any]) -> str:
         return "问题显现 -> 机制可信 -> 结果清楚 -> 品牌记忆"
     if research["domain_profile_id"] == "suspense_reveal":
         return "异常 -> 误判 -> 反转 -> 余韵"
+    if research["domain_profile_id"] == "engineering_maritime":
+        return "宏大工程现场 -> 一线岗位动作 -> 安全与担当被看见 -> 节点致敬 -> 品牌可信收束"
     return "好奇 -> 尝试 -> 小困难 -> 完成 -> 奖励"
 
 

@@ -32,6 +32,7 @@ class MarkdownGenerator:
         campaign = self.state["CAMPAIGN_CALENDAR"]["campaign_focus"]
         wechat = self.state["WECHAT_CONTENT"]
         poster = self.state["POSTER_DESIGN"]
+        client = self.state["CLIENT_CASE_PLAN"]
 
         lines = [
             f"# {ip['name']} {ip['duration']} AIGC 短片提示词文档",
@@ -57,6 +58,12 @@ class MarkdownGenerator:
                 f"- 宣传渠道: {', '.join(channel_plan['requested_channels'])}",
                 f"- 当前节点: {campaign['occasion']}",
                 "",
+            "### 甲方全案方案摘要",
+            "",
+            f"- 核心调性: {client['research_tone_summary']['core_tone']}",
+            f"- 传播主张: {client['case_plan']['communication_proposition']}",
+            f"- 首轮交付: {'；'.join(item['output'] for item in client['case_plan']['first_round_delivery'])}",
+            "",
             "### 调研限制",
             "",
         ]
@@ -245,6 +252,7 @@ class MarkdownGenerator:
                     f"- 比例: {item['ratio']}",
                     f"- 用途: {item['usage']}",
                     f"- 标题方向: {item['headline_direction']}",
+                    f"- 微博配文: {item.get('weibo_caption', '')}",
                     "",
                     item["prompt_cn"],
                     "",
@@ -252,7 +260,29 @@ class MarkdownGenerator:
             )
         lines.extend(
             [
-                "## 13. 评分记录",
+                "## 13. 甲方全案方案与验证矩阵",
+                "",
+                "### 年度节点策略",
+                "",
+            ]
+        )
+        for item in client["case_plan"].get("annual_node_strategy", []):
+            lines.append(f"- {item['node']} ({item['date_rule']}): {item['angle']}")
+        lines.extend(["", "### 验证矩阵", ""])
+        for item in client["verification_matrix"]:
+            lines.extend(
+                [
+                    f"#### {item['channel']}",
+                    "",
+                    f"- 交付物: {item['artifact']}",
+                    f"- 证据样例: {item['sample_evidence']}",
+                    f"- 检查项: {'；'.join(item['checks'])}",
+                    "",
+                ]
+            )
+        lines.extend(
+            [
+                "## 14. 评分记录",
                 "",
                 "| Pipeline | Score | Attempt | Missing |",
                 "| --- | ---: | ---: | --- |",
@@ -278,6 +308,7 @@ class MarkdownGenerator:
             "CAMPAIGN_CALENDAR",
             "WECHAT_CONTENT",
             "POSTER_DESIGN",
+            "CLIENT_CASE_PLAN",
         ):
             item = self.state[key]
             missing = ", ".join(item.get("_missing", [])) or "-"
