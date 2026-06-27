@@ -144,3 +144,11 @@ The first-batch production package for the `远航之前` pilot is available at:
 ```text
 deliverables/first_batch_yuanhangzhiqian/
 ```
+
+After reviewing the client company profile for 中交路桥华南工程有限公司, use the creative-direction selection package before implementation:
+
+```text
+deliverables/creative_direction_selection/
+```
+
+This package gives the client three choices before production: two macro directions and one company-specific direction.

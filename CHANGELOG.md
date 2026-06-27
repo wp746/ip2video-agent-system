@@ -58,3 +58,9 @@
 ## 0.8.0
 
 - Added the first-batch `远航之前` production package with 60-second video script, WeChat special article, node poster prompts, submission copy, and source notes.
+
+## 0.9.0
+
+- Added a client company digest for 中交路桥华南工程有限公司 based on the provided company profile.
+- Added a three-option creative-direction selection package before production: two macro directions and one company-specific direction.
+- Marked the earlier `远航之前` package as a method reference rather than the implementation baseline for 中交路桥华南, because the client has no maritime project focus.
