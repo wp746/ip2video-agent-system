@@ -170,3 +170,9 @@ When the client means publicity nodes rather than construction milestones, use:
 ```text
 deliverables/creative_direction_selection/05_publicity_node_driven_strategy.md
 ```
+
+For direct creative options that can be shown to the client, use:
+
+```text
+deliverables/creative_direction_selection/06_publicity_node_creative_bank.md
+```

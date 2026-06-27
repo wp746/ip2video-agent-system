@@ -75,3 +75,8 @@
 
 - Added a publicity-node driven strategy after the client clarified that the key need is not construction milestones, but safety month, quality month, social days, festivals, and official-IP planning.
 - Added a 7-9 month publicity-node idea bank and client-facing clarification script for turning non-engineering publicity nodes into engineering/IP creative stories.
+
+## 0.12.0
+
+- Added a direct publicity-node creative bank with 16 concrete concepts across safety, quality, eye-care, high-temperature, flood-prevention, festival, and training themes.
+- Added recommended first three concepts for client review: `一厘米追踪令`, `消失的安全扣`, and `工程里的好眼力`.
