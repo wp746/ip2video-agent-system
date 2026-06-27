@@ -152,3 +152,15 @@ deliverables/creative_direction_selection/
 ```
 
 This package gives the client three choices before production: two macro directions and one company-specific direction.
+
+Use the node-driven V2 file when the client has real project milestones:
+
+```text
+deliverables/creative_direction_selection/04_node_driven_creative_directions_v2.md
+```
+
+Use this material request checklist before writing implementation scripts:
+
+```text
+deliverables/creative_direction_selection/03_client_material_request.md
+```

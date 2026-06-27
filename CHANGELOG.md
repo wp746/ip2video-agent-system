@@ -64,3 +64,9 @@
 - Added a client company digest for 中交路桥华南工程有限公司 based on the provided company profile.
 - Added a three-option creative-direction selection package before production: two macro directions and one company-specific direction.
 - Marked the earlier `远航之前` package as a method reference rather than the implementation baseline for 中交路桥华南, because the client has no maritime project focus.
+
+## 0.10.0
+
+- Added a client material request checklist focused on real project milestones, public boundaries, site visuals, and official-account preferences.
+- Added node-driven V2 creative directions so macro ideas must map to real construction milestones such as first pile, first pier, first beam, closure, completion, and opening.
+- Updated the client selection brief to route A/B/C choices based on actual project milestones rather than abstract creative preference.
