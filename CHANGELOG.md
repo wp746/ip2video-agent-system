@@ -70,3 +70,8 @@
 - Added a client material request checklist focused on real project milestones, public boundaries, site visuals, and official-account preferences.
 - Added node-driven V2 creative directions so macro ideas must map to real construction milestones such as first pile, first pier, first beam, closure, completion, and opening.
 - Updated the client selection brief to route A/B/C choices based on actual project milestones rather than abstract creative preference.
+
+## 0.11.0
+
+- Added a publicity-node driven strategy after the client clarified that the key need is not construction milestones, but safety month, quality month, social days, festivals, and official-IP planning.
+- Added a 7-9 month publicity-node idea bank and client-facing clarification script for turning non-engineering publicity nodes into engineering/IP creative stories.

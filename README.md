@@ -164,3 +164,9 @@ Use this material request checklist before writing implementation scripts:
 ```text
 deliverables/creative_direction_selection/03_client_material_request.md
 ```
+
+When the client means publicity nodes rather than construction milestones, use:
+
+```text
+deliverables/creative_direction_selection/05_publicity_node_driven_strategy.md
+```
